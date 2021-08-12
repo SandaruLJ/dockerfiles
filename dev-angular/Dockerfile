@@ -1,2 +1,2 @@
-FROM sandarulj/dev-nodejs:1.0.0
+FROM sandarulj/dev-nodejs:latest
 RUN npm install -g @angular/cli

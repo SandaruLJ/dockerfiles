@@ -1,2 +1,2 @@
-FROM sandarulj/dev-base:1.0.1
+FROM sandarulj/dev-base:latest
 RUN apk --update add --no-cache npm
