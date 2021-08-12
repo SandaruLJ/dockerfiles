@@ -1,5 +1,5 @@
 FROM alpine:3.14
-RUN apk --update add --no-cache zsh git vim openssh \
+RUN apk --update add --no-cache zsh git vim openssh mandoc git-doc \
     && adduser -s /bin/zsh -D dev
 WORKDIR /root
 RUN wget https://raw.githubusercontent.com/SandaruLJ/dotfiles/main/.zshrc \
