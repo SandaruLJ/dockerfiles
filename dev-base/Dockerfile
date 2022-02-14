@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.15
 RUN apk --update add --no-cache zsh git vim openssh mandoc git-doc \
     && adduser -s /bin/zsh -D dev
 WORKDIR /root
