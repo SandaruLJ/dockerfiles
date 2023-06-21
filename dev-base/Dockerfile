@@ -1,10 +1,10 @@
-FROM alpine:3.15
+FROM alpine:3.18
 RUN apk --update add --no-cache zsh git vim openssh mandoc git-doc \
     && adduser -s /bin/zsh -D dev
 WORKDIR /root
 RUN wget https://raw.githubusercontent.com/SandaruLJ/dotfiles/main/.zshrc \
     && git clone https://github.com/ohmyzsh/ohmyzsh.git .oh-my-zsh
-WORKDIR .oh-my-zsh/custom/plugins
+WORKDIR /root/.oh-my-zsh/custom/plugins
 RUN git clone https://github.com/zsh-users/zsh-completions.git \
     && git clone https://github.com/zsh-users/zsh-autosuggestions.git \
     && git clone https://github.com/zsh-users/zsh-history-substring-search.git \
