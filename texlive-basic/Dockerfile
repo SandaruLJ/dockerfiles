@@ -1,5 +1,5 @@
 FROM almalinux:9
-RUN yum install zsh git vim openssh wget -y
+RUN yum install zsh git vim openssh wget make -y
 RUN yum install texlive-scheme-basic texlive-parskip texlive-tabu \
                 texlive-changepage texlive-microtype -y
 RUN yum clean all -y && rm -rf /var/cache
